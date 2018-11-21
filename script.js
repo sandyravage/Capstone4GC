@@ -91,15 +91,13 @@ function addOrRemove(input, element) {
 }
 
 function removeClassCaller() {
+    document.getElementById('aesthetic').play();
     setTimeout(removeClass, 3000);
 }
 
 function removeClass() {
     document.getElementById('1').classList.remove("hidden");
     document.getElementById('2').classList.remove("hidden");
-}
-
-function workAround(input) {
-    document.getElementById("pp1").style.opacity = input;
+    
 }
 

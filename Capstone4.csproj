@@ -67,8 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="aesthetic.mp3" />
     <Content Include="background.png" />
     <Content Include="neon.png" />
+    <Content Include="silence.mp3" />
     <Content Include="sunset.gif" />
     <Content Include="background.gif" />
     <Content Include="arizona.cur" />

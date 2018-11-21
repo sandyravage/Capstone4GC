@@ -10,9 +10,14 @@
 </head>
 <body onload="removeClassCaller();">
     <div class="container">
-        <img src="neon.png" />
+        <iframe src="../silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe> <audio id="aesthetic" autoplay loop>
+            <source src="../aesthetic.mp3" type="audio/mp3">
+        </audio>
+        <img id="header" src="neon.png" />
     </div>
     <div class="container">
+        
+       
 
         <img id="heels" class="item1" src="heelies.gif" />>
 
@@ -27,59 +32,59 @@
 
 
 
-           
+
+            <div class="container3">
+                <img id="icons" src="arizona.gif" />
                 <div class="container3">
-                    <img id="icons" src="arizona.gif" />
-                    <div class="container3">
-                        <button class="adjust" type="button" onclick="addOrRemove('r','2'); adjustQuantity('Arizona Tea', parseInt(document.getElementById('p2').innerHTML), .99);">-</button><p class="input" id="p2">0</p><button class="adjust" type="button" onclick="addOrRemove('a','2'); adjustQuantity('Arizona Tea', parseInt(document.getElementById('p2').innerHTML), .99);">+</button>
-                    </div>
-                    <img id="icons" src="arizona.gif" />
+                    <button class="adjust" type="button" onclick="addOrRemove('r','2'); adjustQuantity('Arizona Tea', parseInt(document.getElementById('p2').innerHTML), .99);">-</button><p class="input" id="p2">0</p><button class="adjust" type="button" onclick="addOrRemove('a','2'); adjustQuantity('Arizona Tea', parseInt(document.getElementById('p2').innerHTML), .99);">+</button>
                 </div>
-
-
-
-
-                <div class="container3">
-                    <img id="icons" src="bust.gif" />
-                    <div class="container3">
-                        <button class="adjust" type="button" onclick="addOrRemove('r','3'); adjustQuantity('Aesthetic Bust', parseInt(document.getElementById('p3').innerHTML), 1999.99);">-</button><p class="input" id="p3">0</p><button class="adjust" type="button" onclick="addOrRemove('a','3'); adjustQuantity('Aesthetic Bust', parseInt(document.getElementById('p3').innerHTML), 1999.99);">+</button>
-                    </div>
-                    <img id="icons" src="bust.gif" />
-                </div>
-
-
-
-
-                <div class="container3">
-                    <img id="icons" src="glitterpalmtree.gif" />
-                    <div class="container3">
-                        <button class="adjust" type="button" onclick="addOrRemove('r','4'); adjustQuantity('Palm Tree', parseInt(document.getElementById('p4').innerHTML), 59.99);">-</button><p class="input" id="p4">0</p><button class="adjust" type="button" onclick="addOrRemove('a','4'); adjustQuantity('Palm Tree', parseInt(document.getElementById('p4').innerHTML), 59.99);">+</button>
-                    </div>
-                    <img id="icons" src="glitterpalmtree.gif" />
-                </div>
-
-
-
-
-                <div class="container3">
-                    <img id="icons" src="sadboi.gif" />
-                    <div class="container3">
-                        <button class="adjust" type="button" onclick="addOrRemove('r','5'); adjustQuantity('Sad Face', parseInt(document.getElementById('p5').innerHTML), .1);">-</button><p class="input" id="p5">0</p><button class="adjust" type="button" onclick="addOrRemove('a','5'); adjustQuantity('Sad Face', parseInt(document.getElementById('p5').innerHTML), .1);">+</button>
-                    </div>
-                    <img id="icons" src="sadboi.gif" />
-                </div>
+                <img id="icons" src="arizona.gif" />
             </div>
+
+
+
+
+            <div class="container3">
+                <img id="icons" src="bust.gif" />
+                <div class="container3">
+                    <button class="adjust" type="button" onclick="addOrRemove('r','3'); adjustQuantity('Aesthetic Bust', parseInt(document.getElementById('p3').innerHTML), 1999.99);">-</button><p class="input" id="p3">0</p><button class="adjust" type="button" onclick="addOrRemove('a','3'); adjustQuantity('Aesthetic Bust', parseInt(document.getElementById('p3').innerHTML), 1999.99);">+</button>
+                </div>
+                <img id="icons" src="bust.gif" />
+            </div>
+
+
+
+
+            <div class="container3">
+                <img id="icons" src="glitterpalmtree.gif" />
+                <div class="container3">
+                    <button class="adjust" type="button" onclick="addOrRemove('r','4'); adjustQuantity('Palm Tree', parseInt(document.getElementById('p4').innerHTML), 59.99);">-</button><p class="input" id="p4">0</p><button class="adjust" type="button" onclick="addOrRemove('a','4'); adjustQuantity('Palm Tree', parseInt(document.getElementById('p4').innerHTML), 59.99);">+</button>
+                </div>
+                <img id="icons" src="glitterpalmtree.gif" />
+            </div>
+
+
+
+
+            <div class="container3">
+                <img id="icons" src="sadboi.gif" />
+                <div class="container3">
+                    <button class="adjust" type="button" onclick="addOrRemove('r','5'); adjustQuantity('Sad Face', parseInt(document.getElementById('p5').innerHTML), .1);">-</button><p class="input" id="p5">0</p><button class="adjust" type="button" onclick="addOrRemove('a','5'); adjustQuantity('Sad Face', parseInt(document.getElementById('p5').innerHTML), .1);">+</button>
+                </div>
+                <img id="icons" src="sadboi.gif" />
+            </div>
+        </div>
 
         <div class="container">
             <div id="1" class="inputbox hidden1 hidden">
-                <p id="pp1">
-                 Hello, and welcome to the Neon Dreams virtual storefront<br />***Enjoy yourself :)***<br /><br />-------Menu------<br />Fiji Water - $2.39<br />Arizona Tea - $.99<br />Aesthetic Bust - $1999.99<br />Palm - $9.99<br />SadBoi - $.10
+                <p>
+                    Hello, and welcome to the Neon Dreams virtual storefront<br />***Enjoy yourself :)***<br /><br />-------Menu------<br />Fiji Water - $2.39<br />Arizona Tea - $.99<br />Aesthetic Bust - $1999.99<br />Palm - $9.99<br />SadBoi - $.10
                 </p>
             </div>
             <img id="2" class="hidden2 hidden" src="head.gif" />
         </div>
 
-       
+
     </div>
     <div class="container"><button class="adjust2" onclick="openReceipt();">CHECKOUT</button></div>
 </body>
