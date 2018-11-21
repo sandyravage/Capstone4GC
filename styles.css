@@ -1,0 +1,179 @@
+﻿html, body {
+    max-height: 100vh;
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+    width:100%;
+    overflow: hidden;
+    cursor: url(boy.cur),auto;
+    position: relative;
+    background-size:cover;
+    background-image: url('background.gif');
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: url(boy.cur),auto;
+    box-sizing: border-box;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: url(boy.cur),auto;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: url(boy.cur),auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: url(boy.cur),auto;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+.item1{
+    flex-grow:2;
+}
+.item2{
+    flex-grow:1;
+}
+
+.adjust {
+    display: inline;
+    padding-bottom: 10px;
+    text-decoration: none;
+    background-color: cyan;
+    color: deeppink;
+    border-bottom: 4px solid darkcyan;
+    border-radius: 4px;
+    width: 35px;
+    height: 25px;
+    text-align: center;
+    cursor: url(arizona.cur),auto;
+    font-family: 'Comic Sans MS';
+}
+
+.adjust:active {
+    transform: translateY(4px);
+    border-bottom: none;
+    cursor: url(arizona.cur),auto;
+}
+
+.adjust2 {
+    display: block;
+    padding-bottom:0;
+    background-color: cyan;
+    color: deeppink;
+    border-bottom: 4px solid darkcyan;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    margin-left:15px;
+    text-align: center;
+    cursor: url(arizona.cur),auto;
+    font-family:'Comic Sans MS';
+    font-size: 30px;
+    font-weight:bold;
+   
+}
+
+.adjust2:active {
+    transform: translateY(4px);
+    border-bottom: none;
+    cursor: url(arizona.cur),auto;
+}
+
+.input {
+    height: 15px;
+    width: 20px;
+    text-align: center;
+    padding:5px 5px 10px 5px;
+    margin: 5px;
+    background-color: lightpink;
+    font-family: 'Comic Sans MS';
+}
+
+#icons{
+    height:100px;
+    width:100px;
+}
+
+#heels{
+    height:200px;
+    width:150px;
+}
+
+.inputbox {
+    margin: 20px;
+    width: 400px;
+    height: 380px;    
+    border: solid;
+    border-color: cyan;
+    background-image: url('background.png');
+    background-size:contain;
+    font-family:'Comic Sans MS';
+    font-size:25px;
+    color:cyan;
+    padding:20px;
+    text-align:center;
+}
+
+.hidden1 {
+    animation: scalein;
+    animation-delay: 3s;
+    animation-duration:4s;
+}
+
+.hidden2 {
+
+    animation: fadein;
+    animation-duration:3s;
+    animation-delay:3s;
+    width: 120px;
+    height: 200px;
+}
+
+.hidden{
+    visibility:hidden;
+}
+
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes scalein{
+    from{
+        transform:scale(0);
+    }
+    to{
+        transform:scale(1);
+    }
+}

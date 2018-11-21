@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A E S T H E T I C</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="removeClassCaller();">
+    <div class="container">
+        <img src="neon.png" />
+    </div>
+    <div class="container">
+
+        <img id="heels" class="item1" src="heelies.gif" />>
+
+        <div class="container2">
+            <div class="container3">
+                <img id="icons" src="fiji.gif" />
+                <div class="container3">
+                    <button class="adjust" type="button" onclick="addOrRemove('r', '1'); adjustQuantity('Fiji Water', parseInt(document.getElementById('p1').innerHTML), 2.39);">-</button><p class="input" id="p1">0</p><button class="adjust" type="button" onclick="addOrRemove('a','1'); adjustQuantity('Fiji Water', parseInt(document.getElementById('p1').innerHTML), 2.39);">+</button>
+                </div>
+                <img id="icons" src="fiji.gif" />
+            </div>
+
+
+
+           
+                <div class="container3">
+                    <img id="icons" src="arizona.gif" />
+                    <div class="container3">
+                        <button class="adjust" type="button" onclick="addOrRemove('r','2'); adjustQuantity('Arizona Tea', parseInt(document.getElementById('p2').innerHTML), .99);">-</button><p class="input" id="p2">0</p><button class="adjust" type="button" onclick="addOrRemove('a','2'); adjustQuantity('Arizona Tea', parseInt(document.getElementById('p2').innerHTML), .99);">+</button>
+                    </div>
+                    <img id="icons" src="arizona.gif" />
+                </div>
+
+
+
+
+                <div class="container3">
+                    <img id="icons" src="bust.gif" />
+                    <div class="container3">
+                        <button class="adjust" type="button" onclick="addOrRemove('r','3'); adjustQuantity('Aesthetic Bust', parseInt(document.getElementById('p3').innerHTML), 1999.99);">-</button><p class="input" id="p3">0</p><button class="adjust" type="button" onclick="addOrRemove('a','3'); adjustQuantity('Aesthetic Bust', parseInt(document.getElementById('p3').innerHTML), 1999.99);">+</button>
+                    </div>
+                    <img id="icons" src="bust.gif" />
+                </div>
+
+
+
+
+                <div class="container3">
+                    <img id="icons" src="glitterpalmtree.gif" />
+                    <div class="container3">
+                        <button class="adjust" type="button" onclick="addOrRemove('r','4'); adjustQuantity('Palm Tree', parseInt(document.getElementById('p4').innerHTML), 59.99);">-</button><p class="input" id="p4">0</p><button class="adjust" type="button" onclick="addOrRemove('a','4'); adjustQuantity('Palm Tree', parseInt(document.getElementById('p4').innerHTML), 59.99);">+</button>
+                    </div>
+                    <img id="icons" src="glitterpalmtree.gif" />
+                </div>
+
+
+
+
+                <div class="container3">
+                    <img id="icons" src="sadboi.gif" />
+                    <div class="container3">
+                        <button class="adjust" type="button" onclick="addOrRemove('r','5'); adjustQuantity('Sad Face', parseInt(document.getElementById('p5').innerHTML), .1);">-</button><p class="input" id="p5">0</p><button class="adjust" type="button" onclick="addOrRemove('a','5'); adjustQuantity('Sad Face', parseInt(document.getElementById('p5').innerHTML), .1);">+</button>
+                    </div>
+                    <img id="icons" src="sadboi.gif" />
+                </div>
+            </div>
+
+        <div class="container">
+            <div id="1" class="inputbox hidden1 hidden">
+                <p id="pp1">
+                 Hello, and welcome to the Neon Dreams virtual storefront<br />***Enjoy yourself :)***<br /><br />-------Menu------<br />Fiji Water - $2.39<br />Arizona Tea - $.99<br />Aesthetic Bust - $1999.99<br />Palm - $9.99<br />SadBoi - $.10
+                </p>
+            </div>
+            <img id="2" class="hidden2 hidden" src="head.gif" />
+        </div>
+
+       
+    </div>
+    <div class="container"><button class="adjust2" onclick="openReceipt();">CHECKOUT</button></div>
+</body>
+</html>
